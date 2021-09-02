@@ -1,2 +1,2 @@
-require './hello_app'
+require './ruby_tutorials/hello_app'
 run Sinatra::Application
