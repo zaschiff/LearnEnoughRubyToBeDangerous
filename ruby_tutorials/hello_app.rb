@@ -1,6 +1,6 @@
 require 'sinatra'
+require_relative './day'
 
 get '/' do
-    dayname = Date::DAYNAMES[Time.now.wday]
-    "Hello, world! Happy #{dayname}."
+    greeting(Time.now)
 end
