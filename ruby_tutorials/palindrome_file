@@ -1,0 +1,12 @@
+#! /home/zschiff/.rvm/rubies/ruby-3.0.0/bin/ruby
+require 'zaschiff_palindrome'
+
+lines = File.readlines("phrases.txt")
+lines.each do |line|
+    if line.palindrome?
+        puts "palindrome detected: #{line}"
+    end
+end
+
+palindromes = lines.select(&:palindrome?)
+File.write('palindrome_file.txt', palindromes.join)

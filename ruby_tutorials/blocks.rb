@@ -26,9 +26,9 @@ end
     end
 }
 
-def bad_sandwhich(contetns)
+def bad_sandwhich(contents)
     puts "top bread"
-    contetns
+    contents
     puts "bottom bread"
 end
 
